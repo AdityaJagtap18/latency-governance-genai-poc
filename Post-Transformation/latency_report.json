@@ -1,0 +1,55 @@
+{
+  "mode": "live",
+  "deployment": "gpt-4.1-mini",
+  "generation_measured_ms": {
+    "p50": 1630.0,
+    "p95": 3271.8,
+    "p99": 8842.9,
+    "mean": 2119.3,
+    "min": 1386.1,
+    "max": 10841.1,
+    "n": 30,
+    "errors": 0
+  },
+  "streaming_ms": {
+    "ttft_p50": 1940.7,
+    "ttft_p95": 2750.4,
+    "total_p50": 2809.4,
+    "total_p95": 3866.7
+  },
+  "chain_of_thought_multiplier": 2.275,
+  "output_length_ms": {
+    "80": {
+      "p50": 1953.5,
+      "tokens": 80.0
+    },
+    "240": {
+      "p50": 2164.1,
+      "tokens": 106.8
+    },
+    "600": {
+      "p50": 2298.6,
+      "tokens": 143.8
+    }
+  },
+  "pipeline_ms": {
+    "ingestion_sequential": {
+      "p50": 12978,
+      "p95": 32688
+    },
+    "ingestion_parallel": {
+      "p50": 12568,
+      "p95": 32348
+    },
+    "interactive": {
+      "p50": 317,
+      "p95": 527
+    }
+  },
+  "composition_check": {
+    "sum_of_stage_p95": 35661,
+    "actual_pipeline_p95": 32688,
+    "sum_of_stage_p50": 12351
+  },
+  "note": "Generation measured against a live endpoint. Other stages modelled from the Day 16 lab. Replace OTHER_STAGES with real timings when you have them."
+}
